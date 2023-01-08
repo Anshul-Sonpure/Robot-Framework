@@ -10,7 +10,8 @@ ${browser}      chrome
 
 ***Test Cases***
 LoginTest
-    c
+    open browser    ${AppUrl}   ${browser}
+    maximize browser window
     LoginTest Application
     sleep   5
     Close Browser
