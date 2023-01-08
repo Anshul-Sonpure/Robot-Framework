@@ -1,61 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.0 on win32)" generated="20230108 20:21:50.398" rpa="false" schemaversion="3">
-<suite id="s1" name="OpenDriver" source="C:\Users\Darkprime\Desktop\Project\RobotFramework_Tutorial\TestScripts\OpenDriver.robot">
-<test id="s1-t1" name="LoginTest" line="12">
+<robot generator="Robot 6.0.1 (Python 3.10.0 on win32)" generated="20230108 21:56:55.057" rpa="false" schemaversion="3">
+<suite id="s1" name="HandleAlert PopUp" source="C:\Users\Darkprime\Desktop\Project\RobotFramework_Tutorial\TestScripts\HandleAlert_PopUp.robot">
+<test id="s1-t1" name="Launch Application" line="15">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${AppUrl}</arg>
+<arg>${HandleAppUrl}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230108 20:21:50.849" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
-<status status="PASS" starttime="20230108 20:21:50.849" endtime="20230108 20:22:01.630"/>
+<msg timestamp="20230108 21:56:55.354" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<status status="PASS" starttime="20230108 21:56:55.354" endtime="20230108 21:57:02.724"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230108 20:22:01.630" endtime="20230108 20:22:01.854"/>
+<status status="PASS" starttime="20230108 21:57:02.726" endtime="20230108 21:57:02.885"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230108 20:22:06.863" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230108 20:22:01.862" endtime="20230108 20:22:06.863"/>
+<msg timestamp="20230108 21:57:07.901" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:02.886" endtime="20230108 21:57:07.901"/>
 </kw>
-<kw name="LoginTest Application">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:firstName</arg>
-<arg>James</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230108 20:22:06.863" level="INFO">Typing text 'James' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20230108 20:22:06.863" endtime="20230108 20:22:07.064"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:lastName</arg>
-<arg>Carter</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230108 20:22:07.072" level="INFO">Typing text 'Carter' into text field 'id:lastName'.</msg>
-<status status="PASS" starttime="20230108 20:22:07.064" endtime="20230108 20:22:07.386"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:userEmail</arg>
-<arg>CarterJames@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230108 20:22:07.394" level="INFO">Typing text 'CarterJames@gmail.com' into text field 'id:userEmail'.</msg>
-<status status="PASS" starttime="20230108 20:22:07.386" endtime="20230108 20:22:07.887"/>
-</kw>
-<status status="PASS" starttime="20230108 20:22:06.863" endtime="20230108 20:22:07.887"/>
+<kw name="Handle Alerts">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Click for JS Alert')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:07.901" level="INFO">Clicking element 'xpath://button[contains(text(),'Click for JS Alert')]'.</msg>
+<status status="PASS" starttime="20230108 21:57:07.901" endtime="20230108 21:57:07.962"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230108 20:22:12.906" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230108 20:22:07.903" endtime="20230108 20:22:12.906"/>
+<msg timestamp="20230108 21:57:10.973" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:07.962" endtime="20230108 21:57:10.974"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230108 20:22:12.906" endtime="20230108 20:22:15.310"/>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230108 21:57:10.975" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230108 21:57:10.975" endtime="20230108 21:57:10.995"/>
 </kw>
-<status status="PASS" starttime="20230108 20:21:50.849" endtime="20230108 20:22:15.310"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:14.003" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:10.995" endtime="20230108 21:57:14.003"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Click for JS Confirm')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:14.003" level="INFO">Clicking element 'xpath://button[contains(text(),'Click for JS Confirm')]'.</msg>
+<status status="PASS" starttime="20230108 21:57:14.003" endtime="20230108 21:57:14.094"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:17.109" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:14.094" endtime="20230108 21:57:17.109"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230108 21:57:17.111" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230108 21:57:17.110" endtime="20230108 21:57:17.131"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Click for JS Confirm')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:17.136" level="INFO">Clicking element 'xpath://button[contains(text(),'Click for JS Confirm')]'.</msg>
+<status status="PASS" starttime="20230108 21:57:17.132" endtime="20230108 21:57:17.217"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:20.231" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:17.218" endtime="20230108 21:57:20.232"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230108 21:57:20.233" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230108 21:57:20.232" endtime="20230108 21:57:20.251"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[contains(text(),'Click for JS Confirm')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:20.255" level="INFO">Clicking element 'xpath://button[contains(text(),'Click for JS Confirm')]'.</msg>
+<status status="PASS" starttime="20230108 21:57:20.251" endtime="20230108 21:57:20.331"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>I am a JS Confirm</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230108 21:57:20.332" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230108 21:57:20.331" endtime="20230108 21:57:20.340"/>
+</kw>
+<status status="PASS" starttime="20230108 21:57:07.901" endtime="20230108 21:57:20.341"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${IFrameAppUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230108 21:57:20.344" level="INFO">Opening browser 'chrome' to base url 'https://ui.vision/demo/webtest/frames'.</msg>
+<status status="PASS" starttime="20230108 21:57:20.343" endtime="20230108 21:57:27.618"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230108 21:57:27.620" endtime="20230108 21:57:27.754"/>
+</kw>
+<kw name="Handle IFrames">
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath:/html/frameset/frame[1]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230108 21:57:27.756" level="INFO">Selecting frame 'xpath:/html/frameset/frame[1]'.</msg>
+<status status="PASS" starttime="20230108 21:57:27.755" endtime="20230108 21:57:27.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:30.808" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:27.793" endtime="20230108 21:57:30.809"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='mytext1']</arg>
+<arg>Text in Frame1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:30.810" level="INFO">Typing text 'Text in Frame1' into text field '//input[@name='mytext1']'.</msg>
+<status status="PASS" starttime="20230108 21:57:30.809" endtime="20230108 21:57:30.975"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230108 21:57:30.975" endtime="20230108 21:57:30.979"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath:/html/frameset/frameset/frame[1]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230108 21:57:30.981" level="INFO">Selecting frame 'xpath:/html/frameset/frameset/frame[1]'.</msg>
+<status status="PASS" starttime="20230108 21:57:30.979" endtime="20230108 21:57:31.062"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:34.080" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:31.062" endtime="20230108 21:57:34.080"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='mytext2']</arg>
+<arg>Text in Frame2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:34.080" level="INFO">Typing text 'Text in Frame2' into text field '//input[@name='mytext2']'.</msg>
+<status status="PASS" starttime="20230108 21:57:34.080" endtime="20230108 21:57:34.237"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20230108 21:57:34.237" endtime="20230108 21:57:34.242"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>xpath:/html/frameset/frameset/frame[3]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230108 21:57:34.243" level="INFO">Selecting frame 'xpath:/html/frameset/frameset/frame[3]'.</msg>
+<status status="PASS" starttime="20230108 21:57:34.242" endtime="20230108 21:57:34.291"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:37.294" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:34.291" endtime="20230108 21:57:37.294"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='mytext4']</arg>
+<arg>Text in Frame4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230108 21:57:37.295" level="INFO">Typing text 'Text in Frame4' into text field '//input[@name='mytext4']'.</msg>
+<status status="PASS" starttime="20230108 21:57:37.294" endtime="20230108 21:57:37.455"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230108 21:57:40.461" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230108 21:57:37.455" endtime="20230108 21:57:40.461"/>
+</kw>
+<status status="PASS" starttime="20230108 21:57:27.755" endtime="20230108 21:57:40.461"/>
+</kw>
+<status status="PASS" starttime="20230108 21:56:55.354" endtime="20230108 21:57:40.461"/>
 </test>
-<status status="PASS" starttime="20230108 20:21:50.398" endtime="20230108 20:22:15.310"/>
+<status status="PASS" starttime="20230108 21:56:55.057" endtime="20230108 21:57:40.469"/>
 </suite>
 <statistics>
 <total>
@@ -64,7 +190,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="OpenDriver">OpenDriver</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="HandleAlert PopUp">HandleAlert PopUp</stat>
 </suite>
 </statistics>
 <errors>
