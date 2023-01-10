@@ -1,0 +1,14 @@
+1673338554620	geckodriver	INFO	Listening on 127.0.0.1:62078
+1673338557630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62079" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DARKPR~1\\AppData\\Local\\Temp\\rust_mozprofile4rFiok"
+1673338558544	Marionette	INFO	Marionette enabled
+1673338558554	Marionette	INFO	Listening on port 62089
+Read port: 62089
+WebDriver BiDi listening on ws://127.0.0.1:62079
+1673338558768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DARKPR~1\\AppData\\Local\\Temp\\rust_mozprofile4rFiok\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62079/devtools/browser/547c2901-1df5-4b6e-8a08-a075055efde6
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+1673338614907	Marionette	INFO	Stopped listening on port 62089
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 908: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
